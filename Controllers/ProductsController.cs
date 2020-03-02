@@ -69,13 +69,6 @@ namespace Task16_BootcampRefactory.Controllers
         [HttpPost]
         public IActionResult Post(Products product)
         {
-            product = new Products
-            {
-                name = product.name,
-                price = product.price,
-                created_at = DateTime.Now,
-                update_at = DateTime.Now
-            };
             _context.products.Add(product);
             _context.SaveChanges();
             return Ok(new

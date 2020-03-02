@@ -6,6 +6,7 @@ using System.Text;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
+using Task16_BootcampRefactory.Model;
 
 namespace Task16_BootcampRefactory.Controllers
 {
@@ -34,7 +35,8 @@ namespace Task16_BootcampRefactory.Controllers
             var tokenDescription = new SecurityTokenDescriptor()
             {
                 Subject = new ClaimsIdentity(new Claim[] {
-                    new Claim(ClaimTypes.Name, _user.username)
+                    new Claim(ClaimTypes.Name, _user.username),
+                    new Claim(ClaimTypes.Sid, _user.password)
                 }),
                 Expires = DateTime.UtcNow.AddDays(7),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(Encoding.ASCII.GetBytes("ini secret key nya harus panjang")), SecurityAlgorithms.HmacSha512Signature)
@@ -50,11 +52,5 @@ namespace Task16_BootcampRefactory.Controllers
 
             return Ok(tokenResponse);
         }
-    }
-
-    public class User
-    {
-        public string username { get; set; }
-        public string password { get; set; }
     }
 }

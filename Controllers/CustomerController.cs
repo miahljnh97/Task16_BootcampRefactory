@@ -76,15 +76,6 @@ namespace Task16_BootcampRefactory.Controllers
         [HttpPost]
         public IActionResult Post(Customers customer)
         {
-            customer = new Customers
-            {
-                full_name = customer.full_name,
-                username = customer.username,
-                email = customer.email,
-                phone_number = customer.phone_number,
-                created_at = DateTime.Now,
-                update_at = DateTime.Now
-            };
             _context.customers.Add(customer);
             _context.SaveChanges();
             return Ok(new
