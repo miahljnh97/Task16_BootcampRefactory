@@ -11,7 +11,7 @@ namespace Task16_BootcampRefactory.Controllers
 {
     [ApiController]
     [Authorize]
-    [Route("[Controller]")]
+    [Route("customer")]
     public class CustomerController : Controller
     {
         private readonly JWTContext _context;

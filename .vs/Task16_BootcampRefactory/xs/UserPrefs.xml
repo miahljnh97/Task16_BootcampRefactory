@@ -1,12 +1,12 @@
 ﻿<Properties StartupConfiguration="{D8500353-A7F1-41E3-8D23-7F2F2D32087C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/UserController.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="Model/JWTModel.cs" Line="22" Column="6" />
-      <File FileName="Controllers/WeatherForecastController.cs" Line="96" Column="10" />
-      <File FileName="Startup.cs" Line="30" Column="36" />
-      <File FileName="JWTContext.cs" Line="15" Column="1" />
-      <File FileName="Controllers/ProductsController.cs" Line="89" Column="1" />
-      <File FileName="Controllers/UserController.cs" Line="4" Column="36" />
+      <File FileName="Model/JWTModel.cs" Line="16" Column="6" />
+      <File FileName="Startup.cs" Line="1" Column="1" />
+      <File FileName="JWTContext.cs" Line="1" Column="1" />
+      <File FileName="Controllers/UserController.cs" Line="14" Column="28" />
+      <File FileName="Controllers/CustomerController.cs" Line="14" Column="21" />
+      <File FileName="Controllers/ProductsController.cs" Line="65" Column="31" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,7 +14,7 @@
           <Node name="Task16_BootcampRefactory" expanded="True">
             <Node name="Task16_BootcampRefactory" expanded="True">
               <Node name="Controllers" expanded="True">
-                <Node name="UserController.cs" selected="True" />
+                <Node name="ProductsController.cs" selected="True" />
               </Node>
               <Node name="Model" expanded="True" />
             </Node>

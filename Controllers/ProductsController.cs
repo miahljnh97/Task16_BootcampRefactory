@@ -6,7 +6,7 @@ using Task16_BootcampRefactory.Model;
 namespace Task16_BootcampRefactory.Controllers
 {
     [ApiController]
-    [Route("products")]
+    [Route("Controller")]
     public class ProductController : Controller
     {
         private readonly JWTContext _context;

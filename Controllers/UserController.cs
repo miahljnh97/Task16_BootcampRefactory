@@ -9,11 +9,16 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace Task16_BootcampRefactory.Controllers
 {
+    [ApiController]
+    [AllowAnonymous]
+    [Route("authenticate")]
+    //[Route("customer")]
+    //[Authorize]
+
     public class UserController : ControllerBase
     {
         [HttpPost]
-        [AllowAnonymous]
-        [Route("authenticate")]
+        
         public IActionResult Authenticate(User user)
         {
             var users = new List<User>(){
